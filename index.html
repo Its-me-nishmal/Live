@@ -96,13 +96,13 @@
     <script>
         // Function to calculate age
         function calculateAge() {
-            var dob = new Date('2002-08-03'); // Replace with your date of birth in YYYY-MM-DD format
+            var dob = new Date('2002-08-02'); // Replace with your date of birth in YYYY-MM-DD format
             var now = new Date();
             var ageInMilliseconds = now - dob;
             var ageDate = new Date(ageInMilliseconds);
             var years = ageDate.getUTCFullYear() - 1970;
             var months = ageDate.getUTCMonth();
-            var days = ageDate.getUTCDate();
+            var days = ageDate.getUTCDate() -1;
             var hours = now.getHours();
             var minutes = now.getMinutes();
             var seconds = now.getSeconds();
